@@ -1,0 +1,11 @@
+{
+  "name": "student-track",
+  "private": true,
+  "workspaces": ["apps/frontend", "apps/backend"],
+  "scripts": {
+    "dev:all": "concurrently \"npm run dev --workspace=apps/frontend\" \"npm run start:dev --workspace=apps/backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
